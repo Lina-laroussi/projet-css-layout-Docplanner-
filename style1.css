@@ -1,0 +1,502 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap");
+/*initialisation*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/*header*/
+
+header {
+  /*boxmodel*/
+  margin: 2% 10%;
+  display: flex;
+}
+
+.image1 {
+  width: 268px;
+  height: 33px;
+  margin-left: 150px;
+}
+
+header {
+  /*Box Model*/
+  margin: 1% 15%;
+  /*flexbox*/
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  margin-right: -5px;
+  margin-left: -20px;
+  margin-top: -1px;
+  padding: 0.8rem;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-width: 250px;
+  padding: 3%;
+  margin-right: 180px;
+}
+
+header li {
+  list-style-type: none;
+}
+
+header li a {
+  text-decoration: none;
+  color: #747474;
+  font-weight: bold;
+}
+
+header li a:hover {
+  color: #00b39b;
+}
+
+.navbar .about {
+  color: #00b39b;
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image1 {
+    width: 300px;
+    height: 35px;
+  }
+}
+
+/*drop down*/
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  display: none;
+  box-shadow: 5px 10px 8px 10px #888888;
+  background-color: white;
+}
+
+.dropdown-content li a {
+  display: block;
+  padding: 5%;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/*main*/
+
+/*introduction*/
+
+@media (max-width: 800px) {
+  .introduction div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 100%;
+    height: 300px;
+  }
+  .introduction div p {
+    min-width: 100%;
+  }
+}
+
+.introduction {
+  /*boxmodel*/
+  margin: 6% 10%;
+  /*flexbox*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /*height: 250px;*/
+}
+
+.introduction div {
+  display: flex;
+}
+
+.introduction div p {
+  padding: 2%;
+  line-height: 1.75;
+  font-weight: 700;
+  color: #747474;
+}
+
+h1 {
+  color: #00b39b;
+  font-size: 2.125rem;
+  word-spacing: 7px;
+  font-weight: 700;
+  font-family: "Work Sans", sans-serif;
+}
+
+/*partie1*/
+@media (max-width: 800px) {
+  .partie1 {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+  }
+  .patients {
+    min-width: 80%;
+    margin: 50px;
+  }
+  .doctors {
+    min-width: 80%;
+    margin-top: 50px;
+  }
+  .clinics {
+    min-width: 80%;
+    margin-top: 50px;
+  }
+}
+.partie1 {
+  margin: 2% 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.patients {
+  width: 25%;
+  height: 100%;
+  padding: 3%;
+  background-color: #00ccb1;
+  border-radius: 15px;
+  margin-left: 5px;
+  transition: all 0.2s ease 0s;
+}
+
+.patients h2 {
+  color: white;
+  font-size: 1.625em;
+}
+
+.patients p {
+  color: white;
+  font-size: 1.5em;
+}
+
+.doctors {
+  width: 25%;
+  height: 100%;
+  padding: 3%;
+  background-color: #3d83df;
+  border-radius: 15px;
+  margin-left: 5px;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.doctors h2 {
+  color: white;
+  font-size: 1.625em;
+}
+
+.doctors p {
+  color: white;
+  font-size: 1.5em;
+}
+
+.clinics {
+  width: 25%;
+  height: 100%;
+  padding: 3%;
+  background-color: #1b2734;
+  border-radius: 15px;
+  margin-right: 30px;
+  transition: all 0.2s ease 0s;
+}
+
+.clinics h2 {
+  color: white;
+  font-size: 1.625em;
+}
+
+.clinics p {
+  color: white;
+  font-size: 1.5em;
+}
+
+.patients select {
+  font-size: 1.3em;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 0 2em 0 0;
+  -webkit-appearance: none;
+  outline: 0;
+  text-transform: none;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+.patients select:hover {
+  color: black;
+}
+
+.doctors select {
+  font-size: 1.3em;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 0 2em 0 0;
+  -webkit-appearance: none;
+  outline: 0;
+  text-transform: none;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+.doctors select:hover {
+  color: black;
+}
+
+.clinics select {
+  font-size: 1.3em;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 0 2em 0 0;
+  -webkit-appearance: none;
+  outline: 0;
+  text-transform: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.clinics select:hover {
+  color: black;
+}
+
+/*local culture*/
+
+@media (max-width: "800px") {
+  .local-culture {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+  }
+  .local-culture h2,
+  .local-culture ul {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+  }
+}
+
+.local-culture {
+  height: 80%;
+  margin: 2% 10%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.local-culture h2 {
+  color: #00b39b;
+  font-size: 25px;
+  word-spacing: 6px;
+}
+
+.local-culture ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.local-culture ul li {
+  margin: 0% 2%;
+}
+
+svg {
+  fill: #747474;
+}
+svg:hover {
+  fill: #00b39b;
+}
+
+.health-care {
+  margin: 2% 10%;
+  margin-top: 200px;
+}
+
+.back-ground {
+  background-color: #d2f1ff;
+  height: 600px;
+}
+
+.health-care h2 {
+  color: #00b39b;
+  font-size: 30px;
+}
+
+.health-care p {
+  color: #747474;
+  line-height: 25px;
+}
+
+.partie-droite {
+  display: flex;
+  margin-left: 800px;
+  margin-top: -200px;
+  flex-wrap: wrap;
+  margin-top: -50px;
+  position: relative;
+}
+
+.droite {
+  padding: 5%;
+  background-color: white;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.droite h3 {
+  color: #00b39b;
+  text-align: center;
+}
+
+.droite p {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.image2 {
+  margin-left: 80px;
+}
+
+/*partie2*/
+.partie2 {
+  margin-top: 150px;
+}
+
+.partie2 h1 {
+  font-size: 30px;
+  text-align: center;
+  line-height: 25px;
+}
+
+.partie2 p {
+  text-align: center;
+  line-height: 25px;
+}
+
+/*countries*/
+.countries {
+  /*Box Model*/
+  margin: 4% 10%; /*4 en haut et 10 3al ajneb*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.country {
+  margin-bottom: 3%;
+  border-radius: 8px;
+}
+
+.country img {
+  border-radius: 8px;
+}
+
+.country div {
+  display: flex;
+  justify-content: space-between;
+  padding: 5%; /*volume interieur du div*/
+  border: 10px solid white;
+  box-shadow: 25px solid black;
+}
+
+.countries .country:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.country button {
+  background-color: #3d83df;
+  padding: 0.5em 0.9em;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  letter-spacing: 2px;
+}
+
+.country button:hover {
+  background-color: #4898ff;
+}
+
+/*partie3*/
+
+.partie3 h1 {
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  margin-top: -20px;
+}
+
+.partie3 button {
+  background-color: #3d83df;
+  padding: 1em 2em;
+  color: white;
+  font-weight: bold;
+  margin-left: 580px;
+  margin-top: 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.partie3 button:hover {
+  background-color: #4898ff;
+}
+
+/*footer*/
+
+.footer-content {
+  margin-top: 150px;
+  border-top: 0.2px solid grey;
+  height: 50%;
+}
+
+.footer-content p {
+  text-align: center;
+  color: #888888;
+  font-size: 15px;
+}
+
+.footer-content a {
+  text-decoration: none;
+  color: #3d83df;
+}
